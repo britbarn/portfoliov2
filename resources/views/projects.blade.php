@@ -3,18 +3,8 @@
   <div class="grid-container">
     <div class="row">
       <div class="grid-x grid-padding-x">
-        <div class="cell hero-banner">
-          <h1>Hello, this is a foundation and sass practice project!</h1>
-        </div>
-      </div>
-      <div class="grid-x grid-padding-x work-row">
-        <div class="small-12 medium-6 cell work1">
-          <h3>Framework</h3>
-          <img src="{{ asset('img/zurb.png') }}">
-        </div>
-        <div class="small-12 medium-6 cell work2">
-          <h3>Compiler</h3>
-          <img src="{{ asset('img/sass.png') }}">
+        <div class="cell hero-banner align-center-middle text-center">
+          <h1>Projects</h1>
         </div>
       </div>
     </div>
