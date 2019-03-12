@@ -1,16 +1,5 @@
 @include('/partials/header')
-<section class="top-banner">
-  <div class="grid-container">
-    <div class="row">
-      <div class="grid-x grid-padding-x">
-        <div class="cell hero-banner align-center-middle text-center">
-          <h1>Project Title</h1>
-          <p>This is a short description of the featured project.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+@include('partials.top-title', ['title' => 'Project', 'description' => 'This is a project!'])
 <section class="project-description">
 	<div class="grid-container">
 		<div class="row">

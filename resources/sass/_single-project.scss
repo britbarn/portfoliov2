@@ -1,22 +1,13 @@
 .project {
-	.top-banner {
-		background-color: #0e9daf;
-		.hero-banner {
-			max-width: 100%;
-			margin-top: 1.25em;
-    		margin-bottom: 1.25em;
-    		color: white;
 
-		}
-	}
 	.project-description {
-		margin: 40px 0px;
+		
 		.cell {
 			margin: auto;
 		}
 
 		.image-cell {
-			background-color: #0e9daf;
+			background-color: $main-color;
     		display: flex;
 
     		img {

@@ -26,3 +26,9 @@ Route::get('/project', function () {
 Route::get('/projects', function () {
     return view('projects');
 });
+
+Route::get('/contact', function () {
+    return view('contact');
+});
+
+Route::post('/contact', 'ContactController@sendContact');

@@ -1,0 +1,47 @@
+## SSS
+
+Summer Stock Stage is a non-profit summer theatre program for teenagers that runs in the summertime. Their old website was not responsive and in need of a new look. I recieved the designs from the creative team, and was tasked with developing the new website.
+
+This site was a pretty standard wordpress build. After creating a few templates and adding in the styles using SASS, most of the work involved migrating content off of their old website. I did need to create a few custom short codes. One displays most recent youtube videos, stored by using a custom post type. The next code displays shows on the "On Stage" page, also pulling from a custom post type. The last short code is used to embed the page-specific navigation menus.
+
+Overall, this was a pretty simple site to build out. The bulk of the work was setting up page styles and short codes.
+
+
+## RR
+
+Rev Racing is a foundation that is dedicated to bring a more diverse driving population to NASCAR. The website needed to be updated from a non-responsive one. I was given designs and assets, and tasked with the build out.
+
+Rev Racing was my first full blown WordPress site using some technologies I wasn't so familiar with. On this project, I had to get the hang of utilizing WP Bakery, a plugin that allows developers to build pages with features such as pre defined columns, form plugins, and a lot of power for customization. Figuring out the best way to utilize this plug in was a challenge, but once I got the hang of it building out pages got to be much easier.
+
+Another new thing I needed to learn about for this project was utilizing Advanced Custom Fields and Custom Post Types. These plugins allow users to define new entities, such as "Race Drivers", and pull the data into short codes and templates to build out robust pages. Using these features didn't prove to be much of an issue, as the functionality was relatively simple.
+
+One of the main things I wanted to focus on for this project was understanding how to use flexbox more effectively. As a back end developer, I hadn't given too much attention to such front end resources. However, I watched some Laracast videos about flexbox and decided I needed to adopt it into my toolbox. The header and footer of the site are built completely with flexbox, and proved to be a lot of fun to learn how to use.
+
+This project uses SASS to process the CSS. I had dabbled in SASS before, but didn't truly understand how to utilize it. I learned just how useful SASS is not just for processing and using variables, but particularly how it helps keep CSS organized. Nesting classes within each other makes styles seem like a drill-down, and I love how structured it is.
+
+Overall this site was relatively challenging because I had to learn how to use several new tools. Gaining the experience was invaluable and allowed me to broaden the type of work I can do.
+
+
+## MBC Back End
+
+When I started my position at Matchbook Creative, I was tasked with starting to build out the functionality for the company website. This inlcuded adding/editing employees, blog posts, job openings, and case studies.
+
+I am a huge fan of Laravel, and pushed for the new site to be build on it. The mission was a success, and I began to dive deeper into Laravel. I watched many different types of Laracasts, which really broadened my understanding of not only Laravel, but OOP concepts in general. When I got to a part where I wasn't sure what the best way was to build something, I would find a video and go from there.
+
+When I began this project, I decided the best way to have it running locally was to use Vagrant and Homestead. These technologies had not yet been utilized at Matchbook, so I figured out how to set it up. It didn't prove to be very hard, and I got a much better grasp on how Vagrant works. It is set up with a Laravel Homestead file, which allows me to deploy multiple projects locally. It has proven to be very convienient, as I have spun up several more websites locally in a small amount of time.
+
+The back end I built out uses a lot of general Laravel concepts. I built out the Models, Controllers, and Requests (for form validation) for all of the data objects. I was able to get a lot more familiar with the php artisan CLI, and discovered just how powerful of a tool it is. Controllers with CRUD functions already defined can be generated with this tool!
+
+After building out the Models and Views, I went on to create the blade template files that would be available on the backend. I'm partial to SB Admin, which is a great bootstrap admin panel that i've used on a few other websites. I broke out common elements into partials, such as the navigation and header and pieced together interfaces for all of my models. This involved creating several different forms, some of them utilizing a file upload functionality.
+
+
+## Blichmann
+
+Blichmann Engineering is a company that builds beer and wine making products. They wanted to move their platform from Drupal to Magento 2, and I was tasked with building the e-Commerce site while working at SFP. This was a very large project with many different steps.
+
+When I got the project, the first thing to do was find their data and download it. It needed to be re-formatted in a way that Magento 2 could import it. This involved diving into their existing database and figuring out what all data needed to be pulled. This included product data, retailer data, and locations for a map. This part was particularly fun to me, coming from a strong database background.
+
+After the data was pulled, I had to write an import script in PHP that interacted with Magento 2's API. This allowed me to create products as well as their associated categories at the same time. It took a few revisions, but once it was complete I had the product data available to work with.
+
+After product data was imported, I began to build out the front end. This included a home page with a built in live-feed from instagram, a page featuring a google map of locations to purchase from retailers, and a few different forms.
+

@@ -12,21 +12,42 @@
     .top-bar-right {
         .dropdown {
             li a {
-                color: #0e9daf;
+                color: $main-color;
                 font-weight: bold;
             }
         }
     }
 }
 
+ 
+.top-banner {
+    background-color: $main-color;
+    .hero-banner {
+        max-width: 100%;
+        margin-top: 1.25em;
+        margin-bottom: 1.25em;
+        color: white;
+    }
+}
 
 /*home page styles*/
-.top-banner {
-	.hero-banner {
-		max-width: 840px;
-		margin-top: 1.25em;
-    	margin-bottom: 2.5em;
-	}
+.home{
+    .top-banner {
+    background-color: white;
+    .hero-banner {
+        max-width: 840px;
+        margin-top: 1.25em;
+        margin-bottom: 2.5em;  
+        color: black; 
+    }
+
+    .work2{
+        img {
+            width: 100px;
+            padding-bottom: 10px;
+        }
+    }
+}
 }
 
 
@@ -38,7 +59,7 @@
 }
 
 footer {
-	padding: 4rem 1rem;
+	padding: 1rem 1rem;
     z-index: 10;
     background-color: #f2f2f2;
 	.icons {
@@ -55,7 +76,7 @@ footer {
     			color: #696969;
 
     			&:hover {
-    				color: #0e9daf;
+    				color: $main-color;
     				cursor: pointer;
     			}
     		}
@@ -64,7 +85,7 @@ footer {
 
 	p {
 		font-size: 1.2rem;
-    	margin: 2em auto 0;
+    	margin: 1em auto 0;
     	text-align: center;
 	}
 }

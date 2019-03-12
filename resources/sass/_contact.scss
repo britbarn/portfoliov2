@@ -1,0 +1,14 @@
+.contact {
+	.contact-form {
+		padding: 50px;
+		button.success   {
+			background-color: $main-color;
+			color: white;
+
+			&:hover {
+				background-color: $main-color;
+				color: white;
+			}
+		}
+	}
+}
