@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests\ContactRequest;
 use App\Mail\Contact;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -36,7 +37,30 @@ class ContactController extends Controller
      */
     public function sendContact(ContactRequest $request)
     {
-        \Mail::to('bbarnes@matchbookcreative.com')->send(new Contact);
+        $request->validate(['email' => 'required|email',
+            'message' => 'required',
+            'name' => 'required'
+        ]);
+        
+        //since this is a new function, I needed to use the request in the declaration
+        Mail::raw($request->message, function ($message) use ($request) {
+            $message->to('britbarnes92@gmail.com');
+            $message->from($request->email);
+            $message->subject('hello there');
+        });
+
+        if (Mail::failures()) {
+        // return response showing failed emails
+            return Redirect::back()->withErrors();
+        }
+        else {     
+            return redirect('/contact')->with('status', 'Your email has been sent!');
+        }
+
+
+
+        
+        
     }
 
     /**

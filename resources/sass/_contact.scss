@@ -1,7 +1,8 @@
-.contact {
 	.contact-form {
-		padding: 50px;
-		button.success   {
+		padding: 60px;
+		.grid-container{
+			max-width: 60rem;
+			button.success   {
 			background-color: $main-color;
 			color: white;
 
@@ -10,5 +11,10 @@
 				color: white;
 			}
 		}
+		}
+		
 	}
-}
+
+	.callout {
+		margin-top: 30px;
+	}

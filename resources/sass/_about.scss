@@ -1,0 +1,35 @@
+.about {
+
+
+		
+		.cell {
+			margin: auto;
+
+			p {
+				padding: 0px 100px 0px 100px;
+			}
+		}
+
+		.known-technologies {
+			margin-bottom: 50px;
+			
+			.logo-row {
+				display: flex;
+    			 flex-wrap: wrap; 
+    			align-items: center;
+
+    			.column {
+    				flex-basis: 25%;
+
+    				img {
+						
+    					width: 200px;
+    					height: auto;
+					}
+    			}
+
+			}
+			
+		}
+
+}

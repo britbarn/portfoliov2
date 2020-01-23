@@ -7,6 +7,10 @@
 
     .top-bar-left {
     	margin-right: auto;
+
+        img {
+            width: 80px;
+        }
     }
 
     .top-bar-right {
@@ -41,12 +45,23 @@
         color: black; 
     }
 
-    .work2{
-        img {
-            width: 100px;
-            padding-bottom: 10px;
+
+    .employers {
+        .svg-logo {
+            height: 70px;
+            padding-right: 50px;
         }
     }
+    .employer-logo {
+        height: auto;
+        width: 200px;
+
+    }
+   /* .svg-logo {
+        width: 60px;
+        height: 40px;
+        padding-right: 20px;
+    }*/
 }
 }
 
@@ -55,6 +70,20 @@
     background-color: $light-gray;
 	#card-grid {
 		padding: 40px 0px;
+        .card {
+            img {
+                width: 600px;
+                height: 300px;
+            }
+
+            .card-section {
+            a {
+                color: $main-color;
+            }
+        }
+        }
+
+        
 	}
 }
 

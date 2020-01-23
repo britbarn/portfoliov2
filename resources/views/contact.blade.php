@@ -12,8 +12,15 @@
       </ul>
     </div>
   </div>
-   
   @endif
+
+@if (session('status'))
+  <div class="row">
+    <div class="callout success">
+        {{ session('status') }}
+    </div>
+  </div>
+@endif
 
 <section class="contact-form">
 	<form role="form" method="POST" action="/contact" enctype="multipart/form-data">

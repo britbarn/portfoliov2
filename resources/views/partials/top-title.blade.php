@@ -4,7 +4,12 @@
       <div class="grid-x grid-padding-x">
         <div class="cell hero-banner align-center-middle text-center">
           <h1>{{$title}}</h1>
-          <p>{{$description}}</p>
+          @php
+            if (isset($description)) {
+              echo "<p>" . $description . "</p>";
+            }
+          @endphp
+          
         </div>
       </div>
     </div>

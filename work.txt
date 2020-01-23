@@ -2,7 +2,7 @@
 
 Summer Stock Stage is a non-profit summer theatre program for teenagers that runs in the summertime. Their old website was not responsive and in need of a new look. I recieved the designs from the creative team, and was tasked with developing the new website.
 
-This site was a pretty standard wordpress build. After creating a few templates and adding in the styles using SASS, most of the work involved migrating content off of their old website. I did need to create a few custom short codes. One displays most recent youtube videos, stored by using a custom post type. The next code displays shows on the "On Stage" page, also pulling from a custom post type. The last short code is used to embed the page-specific navigation menus.
+This site was a pretty standard wordpress build. After creating a few templates and adding in the styles using SASS, most of the work involved migrating content off of their old website. I did need to create a few custom short codes. One displays most recent youtube videos, stored by using a custom post type. The next code displays shows on the "On Stage" page, also pulling from a custom post type. The last short code is used to embed the page-specific navigation menus. This code pull sections of the main navigation menu and displays it on the page. The code checks the current page location, and highlights the navigation item if it is the same as that location.
 
 Overall, this was a pretty simple site to build out. The bulk of the work was setting up page styles and short codes.
 
@@ -13,7 +13,7 @@ Rev Racing is a foundation that is dedicated to bring a more diverse driving pop
 
 Rev Racing was my first full blown WordPress site using some technologies I wasn't so familiar with. On this project, I had to get the hang of utilizing WP Bakery, a plugin that allows developers to build pages with features such as pre defined columns, form plugins, and a lot of power for customization. Figuring out the best way to utilize this plug in was a challenge, but once I got the hang of it building out pages got to be much easier.
 
-Another new thing I needed to learn about for this project was utilizing Advanced Custom Fields and Custom Post Types. These plugins allow users to define new entities, such as "Race Drivers", and pull the data into short codes and templates to build out robust pages. Using these features didn't prove to be much of an issue, as the functionality was relatively simple.
+Another new thing I needed to learn about for this project was how to use Advanced Custom Fields and Custom Post Types. These plugins allow users to define new entities, such as "Race Drivers", and pull the data into short codes and templates to build out robust pages. Using these features didn't prove to be much of an issue, as the functionality was relatively simple.
 
 One of the main things I wanted to focus on for this project was understanding how to use flexbox more effectively. As a back end developer, I hadn't given too much attention to such front end resources. However, I watched some Laracast videos about flexbox and decided I needed to adopt it into my toolbox. The header and footer of the site are built completely with flexbox, and proved to be a lot of fun to learn how to use.
 
@@ -43,5 +43,5 @@ When I got the project, the first thing to do was find their data and download i
 
 After the data was pulled, I had to write an import script in PHP that interacted with Magento 2's API. This allowed me to create products as well as their associated categories at the same time. It took a few revisions, but once it was complete I had the product data available to work with.
 
-After product data was imported, I began to build out the front end. This included a home page with a built in live-feed from instagram, a page featuring a google map of locations to purchase from retailers, and a few different forms.
+After product data was imported, I began to build out the front end. This included a home page with a built in live-feed from instagram, a page featuring a google map of locations to purchase from retailers, and a few different forms. 
 

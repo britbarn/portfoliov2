@@ -1,0 +1,14 @@
+.known-technologies {
+	margin: 20px 0px 20px 0px;
+	&__container {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		img {
+			max-height: 100px;
+		}
+
+	}
+}
