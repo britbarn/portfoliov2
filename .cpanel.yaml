@@ -1,7 +1,7 @@
 deployment:
       tasks:
-        - export DEPLOYPATH=/home/user/public_html 
-        - /bin/cp -r * $DEPLOYPATH                        
+        - export DEPLOYPATH=/home/nftr8o4ov9ri/public_html  # Add /<app_folder> if required
+        - /bin/cp -r * $DEPLOYPATH                        #copy all recursively to $DEPLOYPATH
 
 
 
