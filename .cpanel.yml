@@ -2,5 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/nftr8o4ov9ri/public_html/
-    - /bin/cp -R /home/nftr8o4ov9ri/repositories/portfolio/ $DEPLOYPATH
-    
+    - /bin/cp -R /home/nftr8o4ov9ri/repositories/portfolio $DEPLOYPATH
