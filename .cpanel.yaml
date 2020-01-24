@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/nftr8o4ov9ri/
+    - export DEPLOYPATH=/home/nftr8o4ov9ri
     - /bin/cp -r * $DEPLOYPATH #copy all from root
 #    - /bin/cp -r ./public/* $DEPLOYPATH/public_html/
     - /bin/cp ./public/js/*.js $DEPLOYPATH/public_html/js
