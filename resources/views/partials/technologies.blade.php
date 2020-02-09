@@ -1,6 +1,6 @@
 <section class="known-technologies">
 	<div class="row column text-center">
-		<h2 class="section-header">Known Technologies</h2>
+		<h2 class="section-header">Known Tech</h2>
 	</div>
 	<div class="row small-up-4 medium-up-5 large-up-6 centered-text known-technologies__container">
 		<div class="column"><img src="{{ asset('img/logo-craft-cms.svg') }}"></div>

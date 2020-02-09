@@ -22,6 +22,7 @@ define('LARAVEL_START', microtime(true));
 */
 
 require __DIR__.'/../vendor/autoload.php';
+// require __DIR__.'/../project/vendor/autoload.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -36,6 +37,7 @@ require __DIR__.'/../vendor/autoload.php';
 */
 
 $app = require_once __DIR__.'/../bootstrap/app.php';
+// $app = require_once __DIR__.'/../project/bootstrap/app.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -48,13 +50,6 @@ $app = require_once __DIR__.'/../bootstrap/app.php';
 | and wonderful application we have prepared for them.
 |
 */
-try {
-    $app->run();
-} catch(\Exception $e) {
-    echo "<pre>";
-    echo $e;
-    echo "</pre>";
-}
 
 $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
 
